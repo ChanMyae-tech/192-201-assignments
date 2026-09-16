@@ -1,7 +1,7 @@
 # CampusWheels Vehicle-Rental Desk
 ## How to Run
 Open the terminal in the Assignment_02 folder.
-Run the program with: python main.py
+Run the program with: python main.py.
 This program demonstrates vehicle rental and return, renter validation, inheritance, overriding, and polymorphism that I learned in week 3 and week 4.
 ## Files in this Assignment
 1.rental.py
