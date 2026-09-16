@@ -1,4 +1,4 @@
-from rental import Vehicle, Renter, ElectricCar, MotorBike
+from rental import Vehicle, Renter, ElectricCar, Motorbike
 car = Vehicle("Toyota", "Camry", "ABC123")
 print(car)
 car.rent()
@@ -22,7 +22,7 @@ except ValueError as e:
 
 car = Vehicle("Honda", "Civic", "XYZ789")
 electric_car = ElectricCar("Tesla", "Model S", "TESLA1", 100)
-bike = MotorBike("Yamaha", "R1", "YAM123", 1000)
+bike = Motorbike("Yamaha", "R1", "YAM123", 1000)
 
 vehicles = [car, electric_car, bike]
 for vehicle in vehicles:
