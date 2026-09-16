@@ -7,7 +7,7 @@ car.return_vehicle()
 print(car)
 renter = Renter("Chan", 528528)
 print(renter.name)
-print(renter.license_number)
+print(renter.license_no)
 print(renter.rented)
 
 try:
@@ -16,7 +16,7 @@ except ValueError as e:
     print("Error:", e)
 
 try:
-    renter.license_number = -1
+    renter.license_no = -1
 except ValueError as e:
     print("Error:", e)
 
