@@ -18,9 +18,9 @@ class Vehicle:
 
 
 class Renter:
-    def __init__(self,name, license_number):
+    def __init__(self,name, license_no):
         self.name = name
-        self.license_number = license_number
+        self.license_no = license_no
         self.rented = []
     @property
     def name(self):
@@ -31,13 +31,13 @@ class Renter:
             raise ValueError("Name cannot be empty")
         self._name = value
     @property
-    def license_number(self):
-        return self._license_number
-    @license_number.setter
-    def license_number(self, value):
+    def license_no(self):
+        return self._license_no
+    @license_no.setter
+    def license_no(self, value):
         if value <= 0:
             raise ValueError("License number must be positive")
-        self._license_number = value
+        self._license_no = value
 class ElectricCar(Vehicle):
     def __init__(self, make, model, plate, battery_kwh):
         super().__init__(make, model, plate)
@@ -47,7 +47,7 @@ class ElectricCar(Vehicle):
         base_str = super().__str__()
         return f"{base_str} - Battery Capacity: {self.battery_kwh} kWh"
 
-class MotorBike(Vehicle):
+class Motorbike(Vehicle):
     def __init__(self, make, model, plate, engine_cc):
         super().__init__(make, model, plate)
         self.engine_cc = engine_cc
