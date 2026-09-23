@@ -12,8 +12,6 @@ One row per change. Name the OOP concept and say how you checked the behaviour w
 
 | # | Code smell in the original | What I changed it to | OOP concept applied | How I verified behaviour was unchanged |
 | 1 |Products were stored as bare tuples|I created a Product class with name, price, and category| Classes / Encapsulation| Ran python Assignment_03.py → PASS |
-| 1 | *e.g. product stored as a bare tuple `("Laptop", 1200.0, "electronics")`* | *`Product` class with `name`, `price`, `category`* | Classes / composition | Ran `python Assignment_03.py` → PASS |
-| 2 | *e.g. repeated `if tier == ...` for discount and points* | *`Gold`/`Silver`/… subclasses with `discount_rate()` and `points_mult`* | Polymorphism | PASS |
 | 2 | Order items used product indexes and quantities together | Created an OrderItem class containing a product and quantity | Composition / Encapsulation | Ran the behavior self-test → PASS |
 | 3 | Repeated if/elif conditions were used for membership discounts and points | Created Customer subclasses: SilverCustomer, GoldCustomer, and PlatinumCustomer | Inheritance / Polymorphism  | Ran the behavior self-test → PASS |
 | 4 | Calculations and printing were mixed together in the original program | Created separate methods such as subtotal(), tax(), discount(), total(), and points(). The receipt() method builds the receipt text | Encapsulation / Separation of responsibilities | Compared the output with the legacy program → PASS |
