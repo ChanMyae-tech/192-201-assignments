@@ -39,6 +39,8 @@ Record **every** prompt where AI helped. If you wrote a part yourself, say so in
 | 3 | Explain inheritance and polymorphism for customer membership tiers | Suggested a base Customer class and Silver, Gold, and Platinum subclasses | Edited and accepted |  Checked the discount and points behavior |
 | 4 | Explain how to create the Order class and its calculation methods | Suggested methods for subtotal, tax, discount, total, and points | Accepted and edited | Read every method and ran the behavior self-test |
 | 5 | Explain how to create the receipt method and preserve the original output format | Suggested building receipt text using a list and returning a string | Edited | Compared the receipt format with the legacy output |
+
+
 **Ownership statement.** *By submitting, I confirm I understand and can explain every line of code I submitted, and that this prompt log reflects my actual AI use.*
 
 ---
