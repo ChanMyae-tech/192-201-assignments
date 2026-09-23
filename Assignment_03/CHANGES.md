@@ -11,6 +11,7 @@ This is the written part of your submission. Explain **what you changed and why*
 One row per change. Name the OOP concept and say how you checked the behaviour was unchanged.
 
 | # | Code smell in the original | What I changed it to | OOP concept applied | How I verified behaviour was unchanged |
+|---|---|---|---|---|
 | 1 |Products were stored as bare tuples|I created a Product class with name, price, and category| Classes / Encapsulation| Ran python Assignment_03.py → PASS |
 | 2 | Order items used product indexes and quantities together | Created an OrderItem class containing a product and quantity | Composition / Encapsulation | Ran the behavior self-test → PASS |
 | 3 | Repeated if/elif conditions were used for membership discounts and points | Created Customer subclasses: SilverCustomer, GoldCustomer, and PlatinumCustomer | Inheritance / Polymorphism  | Ran the behavior self-test → PASS |
@@ -32,6 +33,7 @@ The best change to improve the code was the customer subclasses for the differen
 Record **every** prompt where AI helped. If you wrote a part yourself, say so in one row. AI-shaped code with an empty log does **not** meet the Level-2 policy.
 
 | # | My prompt to the AI | What it suggested (summary) | Accept / reject / edited | How I checked it |
+|---|---|---|---|---|
 | 1 | Help me understand the assignment requirements and how to start the refactoring | Explained the requirements and suggested creating classes step by step | Accepted and edited while coding | Read the assignment instructions and checked each step |
 | 2 | Explain how to create an OrderItem class and validate the product and quantity | Suggested composition using a Product object and quantity validation | Accepted | Read every line and ran the behavior test |
 | 3 | Explain inheritance and polymorphism for customer membership tiers | Suggested a base Customer class and Silver, Gold, and Platinum subclasses | Edited and accepted |  Checked the discount and points behavior |
